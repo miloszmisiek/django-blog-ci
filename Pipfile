@@ -30,6 +30,7 @@ urllib3 = "==1.26.9"
 webencodings = "==0.5.1"
 Django = "==3.2.13"
 ez_setup = "==0.9"
+whitenoise = "*"
 
 [dev-packages]
 
