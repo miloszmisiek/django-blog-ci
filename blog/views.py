@@ -1,5 +1,3 @@
-import imp
-from re import template
 from django.shortcuts import get_object_or_404, render, get_list_or_404
 from django.views import generic, View
 from .models import Post
