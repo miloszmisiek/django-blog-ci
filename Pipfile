@@ -32,6 +32,7 @@ Django = "==3.2.13"
 ez_setup = "==0.9"
 whitenoise = "*"
 django-allauth = "*"
+django-crispy-forms = "*"
 
 [dev-packages]
 
