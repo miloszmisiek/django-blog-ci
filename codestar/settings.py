@@ -30,7 +30,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+# option for summernote whebn debug = false
+# CORS - Cross-Origin Resource Sharing, tells browser what resources are permitted to be loaded
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['codestar-ci-2022.herokuapp.com', '127.0.0.1']
 
