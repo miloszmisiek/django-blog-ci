@@ -3,7 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
-
+from django.contrib import messages
 
 class PostList(generic.ListView):
     model = Post
@@ -59,6 +59,7 @@ class PostDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
+            messages.success(request, 'Submited successfully!.')
         else:
             # if user is not authenticated the empty comment form will be passed
             comment_form = CommentForm()
