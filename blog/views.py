@@ -59,7 +59,7 @@ class PostDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
-            messages.success(request, 'Submited successfully!.')
+            messages.success(request, 'Your comment submitted sucessfully!.')
         else:
             # if user is not authenticated the empty comment form will be passed
             comment_form = CommentForm()
